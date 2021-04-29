@@ -1,0 +1,28 @@
+$breakpoints: (
+    mobile:480px, 
+    tablette:1024px, 
+    desktop:1025
+    );
+
+$color_primary:#9356DC;
+
+$color_second: #FF79DA;
+
+$color_third: #99E2D0;
+
+@font-face {
+    font-family: "Shrikhand";
+    src: url("../Shrikhand-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../Roboto-Regular.ttf");
+}
+
+$police_title: "Shrikland";
+
+$police_texte:"Roboto";
+
+
+
