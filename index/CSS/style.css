@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../Roboto-Regular.ttf");
+}
+footer {
+  font-family: "Roboto";
+  color: #9356DC;
+}
+
+/*# sourceMappingURL=style.css.map */
