@@ -1,0 +1,157 @@
+.imageDeFond
+{
+   p
+    {
+        margin:0px;
+    }
+
+    img {width: 100%;
+    height: 200px;
+    margin-top:0px;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    padding:0;}
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        font-size:2.5em;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+        font-size:2em;
+    }
+}
+
+.menu
+{
+    @include flex-column;
+    background-color:$color_lightgrey;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position:relative;
+    bottom:20px;
+
+    
+
+    h1 
+    {
+        justify-self: stretch;
+        font-family: "shrikhand";
+        font-weight:300;
+
+        i 
+        {
+            padding-left:60px;
+        }
+    }
+
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        font-size:5em;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+        font-size:2em;
+    }
+
+}
+
+.entrees
+{
+    width:90%;
+
+    &__title
+    {
+        @include title_card;
+    }
+
+    &__line
+    {
+        @include line;
+    }
+
+    &__card1
+    {
+       @include restaurant_card;
+    }
+
+    &__card2
+    {
+        @include restaurant_card;
+    }
+
+    &__card3
+    {
+        @include restaurant_card;
+    }
+
+    &__card4
+    {
+        @include restaurant_card;
+    }
+}
+
+.plats 
+{
+    width:90%;
+
+    &__title
+    {
+        @include title_card;
+    }
+
+    &__line
+    {
+        @include line;
+    }
+
+    &__card1
+    {
+       @include restaurant_card;
+    }
+
+    &__card2
+    {
+        @include restaurant_card;
+    }
+
+    &__card3
+    {
+        @include restaurant_card;
+    }
+}
+
+.desserts 
+{
+    width:90%;
+
+    &__title
+    {
+        @include title_card;
+    }
+
+    &__line
+    {
+        @include line;
+    }
+
+    &__card1
+    {
+       @include restaurant_card;
+    }
+
+    &__card2
+    {
+        @include restaurant_card;
+    }
+
+    &__card3
+    {
+        @include restaurant_card;
+    }
+}
+
+.menu__commander{
+    @include button
+}

@@ -1,13 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-@font-face {
-  font-family: "roboto_bold";
-  src: url(../polices/Roboto-Bold.ttf);
-}
-@font-face {
-  font-family: "Roboto-Regular";
-  src: url(../polices/Roboto-Regular.ttf);
-}
 .header__logo {
   width: 100%;
   display: flex;
@@ -95,7 +87,6 @@ header img {
 .description h1 {
   font-weight: 1000;
   margin: 30px 0px 10px 0px;
-  font-family: "roboto_bold";
 }
 .description__explain {
   margin: 0px 0px 20px 0px;
@@ -137,7 +128,6 @@ header img {
   align-self: flex-start;
   margin-left: 20px;
   font-weight: 1000;
-  font-family: "roboto_bold";
 }
 .fonctionnement__choix {
   border: 1px solid #f2f2f2;
@@ -272,7 +262,6 @@ header img {
   align-self: flex-start;
   margin-top: 50px;
   margin-left: 20px;
-  font-family: "roboto_bold";
   font-weight: 1000;
 }
 .restaurants__card1 {
@@ -307,7 +296,6 @@ header img {
   padding: 10px 5px 10px 5px;
   align-self: flex-start;
   font-weight: bold;
-  font-family: "roboto_bold";
   width: 100%;
   font-size: 1.4em;
   color: black;
@@ -317,7 +305,6 @@ header img {
 .restaurants__card1 figcaption span {
   font-weight: 100;
   display: flex;
-  font-family: "roboto";
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
@@ -359,7 +346,6 @@ header img {
   padding: 10px 5px 10px 5px;
   align-self: flex-start;
   font-weight: bold;
-  font-family: "roboto_bold";
   width: 100%;
   font-size: 1.4em;
   color: black;
@@ -369,7 +355,6 @@ header img {
 .restaurants__card2 figcaption span {
   font-weight: 100;
   display: flex;
-  font-family: "roboto";
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
@@ -411,7 +396,6 @@ header img {
   padding: 10px 5px 10px 5px;
   align-self: flex-start;
   font-weight: bold;
-  font-family: "roboto_bold";
   width: 100%;
   font-size: 1.4em;
   color: black;
@@ -421,7 +405,6 @@ header img {
 .restaurants__card3 figcaption span {
   font-weight: 100;
   display: flex;
-  font-family: "roboto";
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
@@ -463,7 +446,6 @@ header img {
   padding: 10px 5px 10px 5px;
   align-self: flex-start;
   font-weight: bold;
-  font-family: "roboto_bold";
   width: 100%;
   font-size: 1.4em;
   color: black;
@@ -473,7 +455,6 @@ header img {
 .restaurants__card4 figcaption span {
   font-weight: 100;
   display: flex;
-  font-family: "roboto";
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
@@ -621,7 +602,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .entrees__card1 {
@@ -655,7 +635,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .entrees__card2 {
@@ -689,7 +668,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .entrees__card3 {
@@ -723,7 +701,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .entrees__card4 {
@@ -772,7 +749,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .plats__card1 {
@@ -806,7 +782,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .plats__card2 {
@@ -840,7 +815,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .plats__card3 {
@@ -889,7 +863,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .desserts__card1 {
@@ -923,7 +896,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .desserts__card2 {
@@ -957,7 +929,6 @@ header img {
   display: flex;
   flex-direction: column;
   align-content: center;
-  font-family: "roboto_bold";
 }
 @media screen and (min-width: 1025px) {
   .desserts__card3 {
@@ -999,7 +970,7 @@ header img {
 body {
   margin: 0;
   padding: 0;
-  font-family: "roboto";
+  font-family: "Roboto";
   width: 100%;
   background-color: #f2f2f2;
 }

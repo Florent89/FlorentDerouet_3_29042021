@@ -10,7 +10,7 @@
 @import "./layout/footer";
 @import "./pages/page_restaurant.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 
 
@@ -18,7 +18,7 @@ body
 {
     margin:0;
     padding:0;
-    font-family: 'roboto';
+    font-family: 'Roboto';
     width:100%;
     background-color: $color_lightgrey;
 
