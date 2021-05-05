@@ -93,6 +93,9 @@ figure {
   background-color: white;
   padding: 10px 0px 10px 0px;
 }
+.header a:visited {
+  color: #333333;
+}
 .header_arrow {
   font-size: 1em;
   color: #333333;
@@ -166,21 +169,6 @@ header img {
 .description__explain {
   margin: 0px 0px 20px 0px;
 }
-.description__button {
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 30px;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  color: white;
-  font-size: 0.95em;
-  font-weight: 600;
-  padding: 15px 15px 15px 15px;
-  margin-bottom: 50px;
-}
-.description__button:hover {
-  background: linear-gradient(#ff46cc, #782cd3);
-  box-shadow: 2px 2px 2px 2px grey;
-}
 @media screen and (min-width: 1025px) {
   .description {
     font-size: 2.5em;
@@ -203,37 +191,6 @@ header img {
   align-self: flex-start;
   margin-left: 20px;
   font-weight: 1000;
-}
-.fonctionnement .function_button {
-  border: 1px solid #f2f2f2;
-  padding: 30px 30px 30px 0px;
-  margin-bottom: 20px;
-  width: 90%;
-  font-size: 0.9em;
-  font-weight: 600;
-  border-radius: 30px;
-  background-color: #f2f2f2;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-}
-.fonctionnement .function_button i {
-  color: #676767;
-  font-size: 1.3em;
-  padding: 0px 15px 0px 15px;
-}
-.fonctionnement .function_button span {
-  border: 1px solid #9356DC;
-  color: white;
-  background-color: #9356DC;
-  border-radius: 50%;
-  padding: 4px 8px 4px 8px;
-  position: absolute;
-  left: 10px;
-}
-.fonctionnement .function_button:hover {
-  background-color: #f2eafb;
-}
-.fonctionnement .function_button:hover i {
-  color: #9356DC;
 }
 @media screen and (min-width: 1025px) {
   .fonctionnement {
@@ -424,13 +381,21 @@ header img {
   position: relative;
   bottom: 20px;
 }
-.menu h1 {
+.menu__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.menu__title h1 {
   justify-self: stretch;
   font-family: "shrikhand";
   font-weight: 300;
 }
-.menu h1 i {
-  padding-left: 60px;
+.menu__title i {
+  position: relative;
+  top: 15px;
 }
 @media screen and (min-width: 1025px) {
   .menu {
@@ -443,21 +408,21 @@ header img {
   }
 }
 
-.entrees {
+.entrees, .plats, .desserts {
   width: 90%;
 }
-.entrees__title {
+.entrees__title, .plats__title, .desserts__title {
   margin-bottom: 5px;
   font-size: 1.2em;
   font-weight: 300;
 }
-.entrees__line {
+.entrees__line, .plats__line, .desserts__line {
   border: solid 1px #99E2D0;
   width: 13%;
   margin: 0px;
   padding: 0px;
 }
-.entrees__card1 {
+.entrees__card1, .entrees__card2, .entrees__card3, .entrees__card4, .plats__card1, .plats__card2, .plats__card3, .plats__card4, .desserts__card1, .desserts__card2, .desserts__card3, .desserts__card4 {
   border: 1px solid white;
   padding: 5px 5px 0px 5px;
   width: 90%;
@@ -471,367 +436,24 @@ header img {
   align-content: center;
 }
 @media screen and (min-width: 1025px) {
-  .entrees__card1 {
+  .entrees__card1, .entrees__card2, .entrees__card3, .entrees__card4, .plats__card1, .plats__card2, .plats__card3, .plats__card4, .desserts__card1, .desserts__card2, .desserts__card3, .desserts__card4 {
     height: 150px;
     font-size: 1.2em;
   }
 }
-.entrees__card1 span {
+.entrees__card1 span, .entrees__card2 span, .entrees__card3 span, .entrees__card4 span, .plats__card1 span, .plats__card2 span, .plats__card3 span, .plats__card4 span, .desserts__card1 span, .desserts__card2 span, .desserts__card3 span, .desserts__card4 span {
   font-weight: 300;
   overflow: hidden;
   align-self: flex-start;
   font-family: "roboto";
   padding-top: 5px;
 }
-.entrees__card1 em {
+.entrees__card1 em, .entrees__card2 em, .entrees__card3 em, .entrees__card4 em, .plats__card1 em, .plats__card2 em, .plats__card3 em, .plats__card4 em, .desserts__card1 em, .desserts__card2 em, .desserts__card3 em, .desserts__card4 em {
   font-style: normal;
   text-align: right;
   position: relative;
   bottom: 15px;
   font-weight: bold;
-}
-.entrees__card2 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .entrees__card2 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.entrees__card2 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.entrees__card2 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.entrees__card3 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .entrees__card3 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.entrees__card3 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.entrees__card3 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.entrees__card4 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .entrees__card4 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.entrees__card4 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.entrees__card4 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-
-.plats {
-  width: 90%;
-}
-.plats__title {
-  margin-bottom: 5px;
-  font-size: 1.2em;
-  font-weight: 300;
-}
-.plats__line {
-  border: solid 1px #99E2D0;
-  width: 13%;
-  margin: 0px;
-  padding: 0px;
-}
-.plats__card1 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .plats__card1 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.plats__card1 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.plats__card1 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.plats__card2 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .plats__card2 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.plats__card2 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.plats__card2 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.plats__card3 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .plats__card3 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.plats__card3 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.plats__card3 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-
-.desserts {
-  width: 90%;
-}
-.desserts__title {
-  margin-bottom: 5px;
-  font-size: 1.2em;
-  font-weight: 300;
-}
-.desserts__line {
-  border: solid 1px #99E2D0;
-  width: 13%;
-  margin: 0px;
-  padding: 0px;
-}
-.desserts__card1 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .desserts__card1 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.desserts__card1 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.desserts__card1 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.desserts__card2 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .desserts__card2 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.desserts__card2 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.desserts__card2 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-.desserts__card3 {
-  border: 1px solid white;
-  padding: 5px 5px 0px 5px;
-  width: 90%;
-  font-size: 0.8em;
-  font-weight: bold;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-@media screen and (min-width: 1025px) {
-  .desserts__card3 {
-    height: 150px;
-    font-size: 1.2em;
-  }
-}
-.desserts__card3 span {
-  font-weight: 300;
-  overflow: hidden;
-  align-self: flex-start;
-  font-family: "roboto";
-  padding-top: 5px;
-}
-.desserts__card3 em {
-  font-style: normal;
-  text-align: right;
-  position: relative;
-  bottom: 15px;
-  font-weight: bold;
-}
-
-.menu__commander {
-  background: linear-gradient(#FF79DA, #9356DC);
-  border: none;
-  border-radius: 30px;
-  box-shadow: 5px 5px 5px 2px #e6e6e6;
-  color: white;
-  font-size: 0.95em;
-  font-weight: 600;
-  padding: 15px 15px 15px 15px;
-  margin-bottom: 50px;
-}
-.menu__commander:hover {
-  background: linear-gradient(#ff46cc, #782cd3);
-  box-shadow: 2px 2px 2px 2px grey;
 }
 
 /*# sourceMappingURL=style.css.map */

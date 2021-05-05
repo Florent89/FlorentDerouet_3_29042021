@@ -36,63 +36,6 @@
     border-bottom-right-radius: $pixel_number4;
 }
 
-
-@mixin button{
-    background: linear-gradient( $color_second, $color_primary);
-    border:none;
-    border-radius:30px;
-    box-shadow: 5px 5px 5px 2px $color_grey;
-    color:white;
-    font-size:0.95em;
-    font-weight: 600;
-    padding:15px 15px 15px 15px;
-    margin-bottom: 50px;
-
-    &:hover{
-        background: linear-gradient( darken($color_second,10%), darken($color_primary, 10%));
-        box-shadow: 2px 2px 2px 2px grey;
-    }
-}
-
-@mixin card_fonctionnement{
-    border: 1px solid $color_lightgrey;
-    padding:30px 30px 30px 0px;
-    margin-bottom:20px;
-    width:90%;
-    font-size:0.9em;
-    font-weight:600;
-    border-radius: 30px;
-    background-color: $color_lightgrey;
-    box-shadow: 5px 5px 5px 2px $color_grey;
-
-    i {
-        color: darken($color_grey, 50%);
-        font-size:1.3em;
-        padding:0px 15px 0px 15px;
-
-    }
-
-    span{
-        border: 1px solid $color_primary;
-        color:white;
-        background-color: $color_primary;
-        border-radius: 50%;
-        padding: 4px 8px 4px 8px;
-       position: absolute;
-       left:10px;
-}
-
-    &:hover{
-        background-color: lighten($color_primary,35%);
-
-        i 
-        {
-            color:$color_primary;
-        }
-    }
-}
-
-
 @mixin title_card
 {
     margin-bottom:5px;
@@ -105,41 +48,5 @@
         width:13%;
         margin:0px;
         padding:0px;
-}
-
-@mixin restaurant_card{
-    border: 1px solid white;
-    padding:5px 5px 0px 5px;
-    width:90%;
-    font-size:0.8em;
-    font-weight:bold;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 5px 5px 5px 2px $color_grey;
-    display:flex;
-    flex-direction:column;
-    align-content: center;
-
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-        height: 150px;
-        font-size: 1.2em;
-    }
-
-    span {
-        font-weight: 300;
-        overflow:hidden;
-        align-self:flex-start;
-        font-family:'roboto';
-        padding-top:5px;
-    }
-
-    em 
-    {
-        font-style:normal;
-        text-align:right;
-        position: relative;
-        bottom:15px;
-        font-weight:bold;
-    }
 }
 

@@ -33,19 +33,26 @@
     position:relative;
     bottom:20px;
 
-    
+    &__title{
+        width:100%;
+        @include flex-center;
+        justify-content:space-around;
+       
 
-    h1 
+        h1 
     {
         justify-self: stretch;
         font-family: "shrikhand";
         font-weight:300;
+    }
 
-        i 
-        {
-            padding-left:60px;
+        i {
+            position: relative;
+            top:15px;
         }
     }
+
+    
 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:5em;
@@ -55,103 +62,4 @@
         font-size:2em;
     }
 
-}
-
-.entrees
-{
-    width:90%;
-
-    &__title
-    {
-        @include title_card;
-    }
-
-    &__line
-    {
-        @include line;
-    }
-
-    &__card1
-    {
-       @include restaurant_card;
-    }
-
-    &__card2
-    {
-        @include restaurant_card;
-    }
-
-    &__card3
-    {
-        @include restaurant_card;
-    }
-
-    &__card4
-    {
-        @include restaurant_card;
-    }
-}
-
-.plats 
-{
-    width:90%;
-
-    &__title
-    {
-        @include title_card;
-    }
-
-    &__line
-    {
-        @include line;
-    }
-
-    &__card1
-    {
-       @include restaurant_card;
-    }
-
-    &__card2
-    {
-        @include restaurant_card;
-    }
-
-    &__card3
-    {
-        @include restaurant_card;
-    }
-}
-
-.desserts 
-{
-    width:90%;
-
-    &__title
-    {
-        @include title_card;
-    }
-
-    &__line
-    {
-        @include line;
-    }
-
-    &__card1
-    {
-       @include restaurant_card;
-    }
-
-    &__card2
-    {
-        @include restaurant_card;
-    }
-
-    &__card3
-    {
-        @include restaurant_card;
-    }
-}
-
-.menu__commander{
-    @include button
 }

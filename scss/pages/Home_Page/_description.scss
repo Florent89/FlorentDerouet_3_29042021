@@ -13,9 +13,6 @@
         margin:0px 0px 20px 0px;
     }
 
-    &__button {
-        @include button;
-    }
 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:2.5em;
