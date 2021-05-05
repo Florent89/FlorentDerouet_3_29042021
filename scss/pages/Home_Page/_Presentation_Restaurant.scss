@@ -12,6 +12,7 @@
         }
     }
 
+
     &__title{
         align-self:flex-start;
         margin-top:50px;
@@ -19,21 +20,6 @@
         font-weight:1000;
     }
 
-    &__card1{
-    @include card_restaurant_index;
-    }
-
-    &__card2{
-        @include card_restaurant_index;
-    }
-    
-    &__card3{
-        @include card_restaurant_index;
-    }
-
-    &__card4{
-        @include card_restaurant_index;
-    }
 
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:2.5em;

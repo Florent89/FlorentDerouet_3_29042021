@@ -1,0 +1,21 @@
+.function_button{
+    @include card_fonctionnement;
+ }
+
+.button_default {
+    @include button;
+}
+
+.button_like 
+{
+    border:none;
+    background-color:transparent;
+    align-self:flex-end;
+    width:20%;
+    position:relative;
+    bottom:40px;
+
+    i {
+        font-size:2em;
+    }
+}
