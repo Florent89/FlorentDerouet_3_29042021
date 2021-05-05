@@ -22,45 +22,57 @@
             <section class="description">
                 <h1 class="description__title"> Réservez le menu qui <br/> vous convient</h1>
                 <p class="description__explain"> Découvrez des retaurants d'exeption,<br/> sélectionnés par nos soins.</p>
-                <button class="description__button"> Explorer nos retaurants</button>
+                <a href="traitement.php"><button class="button_default"> Explorer nos retaurants</button></a>
             </section>
 
             <section class="fonctionnement">
                 <h2 class="fonctionnement__title"> Fonctionnement </h2>
-                <button class="fonctionnement__choix"> <span> 1 </span> <i class="fas fa-mobile-alt"></i> Choisissez un restaurant </button>
-                <button class="fonctionnement__compose"> <span> 2 </span> <i class="fas fa-list-ul"></i> Composez votre menu </button>
-                <button class="fonctionnement__deguste"> <span> 3 </span> <i class="fas fa-store"></i> Dégustez au restaurant </button>
+                <button class="function_button" onclick="window.location.href = 'traitement.php';"> <span> 1 </span> <i class="fas fa-mobile-alt"></i> Choisissez un restaurant </button>
+                <button class="function_button"  onclick="window.location.href = 'traitement.php';"> <span> 2 </span> <i class="fas fa-list-ul"></i> Composez votre menu </button>
+                <button class="function_button"  onclick="window.location.href = 'traitement.php';"> <span> 3 </span> <i class="fas fa-store"></i> Dégustez au restaurant </button>
             </section>
 
             <section class="restaurants">
                 <h2 class="restaurants__title"> Restaurants </h2>
-                <a href="pages/RestoPalette.html">
-                    <figure class="restaurants__card1">
-                        <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant la palette du goût">
-                        <figcaption> La palette du goût <br/> <span> Ménilmontant  <i class="far fa-heart"></i></span> </figcaption>
-                    </figure>
-                </a>
+                <div class="restaurants__card1" >
+                    <a href="pages/RestoPalette.html">
+                        <figure >
+                            <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant la palette du goût">
+                            <figcaption> La palette du goût <br/> <span> Ménilmontant   </figcaption>
+                        </figure>
+                    </a>
+                    <button class="button_like"> <i class="far fa-heart"></i></span> </button>
+                </div>
 
-                <a href="pages/RestoNote.html">
-                    <figure class="restaurants__card2">
-                        <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant la note enchantée">
-                        <figcaption> La note enchantée <br/> <span> Charonne  <i class="far fa-heart"></i> </span></figcaption>
-                    </figure>
-                </a>
+                <div class="restaurants__card2">
+                    <a href="pages/RestoNote.html">
+                        <figure >
+                            <img src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant la note enchantée">
+                            <figcaption> La note enchantée <br/> <span> Charonne   </span></figcaption>
+                        </figure>
+                    </a>
+                    <button class="button_like"> <i class="far fa-heart"></i> </button>
+                </div>
 
-                <a href="pages/RestoFrançaise.html">
-                    <figure class="restaurants__card3">
-                        <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant à la française">
-                        <figcaption> À la française <br/> <span> Cité Rouge <i class="far fa-heart"></i> </span> </figcaption>
-                    </figure>
-                </a>
+                <div class="restaurants__card3">
+                    <a href="pages/RestoFrançaise.html">
+                        <figure >
+                            <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant à la française">
+                            <figcaption> À la française <br/> <span> Cité Rouge  </span> </figcaption>
+                        </figure>
+                    </a>
+                    <button class= "button_like"><i class="far fa-heart"></i> </button>
+                </div>
 
-                <a href="pages/RestoDelice.html">
-                    <figure class="restaurants__card4">
-                        <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant le délice des sens">
-                        <figcaption> Le délice des sens <br/> <span> Folie-Méricourt  <i class="far fa-heart"></i></span> </figcaption>
-                    </figure>
-                </a>
+                <div class="restaurants__card4">
+                    <a href="pages/RestoDelice.html">
+                        <figure >
+                            <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant le délice des sens">
+                            <figcaption> Le délice des sens <br/> <span> Folie-Méricourt   </figcaption>
+                        </figure>
+                    </a>
+                    <button class="button_like">  </button>
+                </div>
             </section>
         </main>
 
