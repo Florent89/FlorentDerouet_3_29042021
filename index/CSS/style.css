@@ -25,6 +25,7 @@ figure {
   border-radius: 30px;
   background-color: #f2f2f2;
   box-shadow: 5px 5px 5px 2px #e6e6e6;
+  transform: scale(1);
 }
 .function_button i {
   color: #676767;
@@ -42,9 +43,24 @@ figure {
 }
 .function_button:hover {
   background-color: #f2eafb;
+  transform: scale(1.05) perspective(1px) translateZ(0);
+  transition: transform 1.2s;
+  box-shadow: 4px 4px 4px 4px grey;
+  backface-visibility: hidden;
 }
 .function_button:hover i {
   color: #9356DC;
+}
+@media screen and (min-width: 1025px) {
+  .function_button {
+    font-size: 2.5em;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .function_button {
+    font-size: 2em;
+  }
 }
 
 .button_default {
@@ -57,15 +73,19 @@ figure {
   font-weight: 600;
   padding: 15px 15px 15px 15px;
   margin-bottom: 50px;
+  transform: scale(1);
 }
 .button_default:hover {
-  background: linear-gradient(#ff46cc, #782cd3);
-  box-shadow: 2px 2px 2px 2px grey;
+  transform: scale(1.1) perspective(1px) translateZ(0);
+  transition: transform 1.5s;
+  background: linear-gradient(#ff7edb, #965add);
+  box-shadow: 4px 4px 4px 4px grey;
+  backface-visibility: hidden;
 }
 
 .button_like {
-  border: none;
-  background-color: transparent;
+  border: white;
+  background-color: white;
   align-self: flex-end;
   width: 20%;
   position: relative;
@@ -73,6 +93,32 @@ figure {
 }
 .button_like i {
   font-size: 2em;
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  transition: color 2s;
+}
+.button_like i:active {
+  color: #9356DC;
+  -webkit-text-stroke-color: transparent;
+}
+@media screen and (min-width: 1025px) {
+  .button_like i {
+    font-size: 4em;
+    position: relative;
+    bottom: 20px;
+  }
+  .button_like i:hover {
+    color: #9356DC;
+    -webkit-text-stroke-color: transparent;
+  }
+}
+@media screen and (min-width: 767px) {
+  .button_like i {
+    font-size: 2.5em;
+    position: relative;
+    bottom: 20px;
+  }
 }
 
 .header__logo {
@@ -198,13 +244,16 @@ header img {
   }
   .fonctionnement span {
     position: absolute;
-    left: 50px;
+    left: 60px;
     padding: 8px 16px 8px 16px;
   }
 }
 @media screen and (min-width: 767px) {
   .fonctionnement {
-    font-size: 2em;
+    font-size: 1.2em;
+  }
+  .fonctionnement h2 {
+    font-size: 1.5em;
   }
   .fonctionnement span {
     position: absolute;
@@ -237,20 +286,23 @@ header img {
 @media screen and (min-width: 1025px) {
   .restaurants {
     font-size: 2.5em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
   }
-  .restaurants figure {
-    height: 400px;
-    margin-bottom: 40px;
+  .restaurants__title {
+    width: 100%;
   }
 }
 @media screen and (min-width: 767px) {
   .restaurants {
-    font-size: 2em;
+    font-size: 1.7em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
   }
-  .restaurants figure {
-    height: 300px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+  .restaurants__title {
+    width: 100%;
   }
 }
 
@@ -275,6 +327,12 @@ header img {
   height: 220px;
   margin: 20px;
   overflow: hidden;
+  transform: scale(1);
+}
+.restaurants__card1:hover, .restaurants__card2:hover, .restaurants__card3:hover, .restaurants__card4:hover {
+  transform: scale(1.05);
+  transition: transform 1.2s;
+  box-shadow: 4px 4px 4px 4px grey;
 }
 .restaurants__card1 img, .restaurants__card2 img, .restaurants__card3 img, .restaurants__card4 img {
   width: 100%;
@@ -288,6 +346,18 @@ header img {
   object-fit: cover;
   object-position: center;
   padding: 0;
+}
+@media screen and (min-width: 1025px) {
+  .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4 {
+    width: 45%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .restaurants__card1, .restaurants__card2, .restaurants__card3, .restaurants__card4 {
+    width: 40%;
+    height: 250px;
+  }
 }
 .restaurants figcaption {
   padding: 10px 5px 10px 5px;
@@ -306,6 +376,12 @@ header img {
   justify-content: space-between;
   width: 50%;
   font-size: 0.8em;
+}
+@media screen and (min-width: 767px) {
+  .restaurants figcaption {
+    font-size: 1em;
+    width: 100%;
+  }
 }
 
 .foot {

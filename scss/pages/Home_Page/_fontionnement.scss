@@ -3,7 +3,6 @@
     @include flex-column;
     background-color:white;
     
-
     &__title{
         align-self:flex-start;
         margin-left:20px;
@@ -14,17 +13,22 @@
         font-size:2.5em;
         span {
             position:absolute;
-            left:50px;
+            left:60px;
             padding:8px 16px 8px 16px;
         }
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) {
-        font-size:2em;
+        font-size:1.2em;
+
+        h2 {
+            font-size:1.5em;
+        }
+
         span {
             position:absolute;
             left:20px;
             padding:8px 16px 8px 16px;
-    }
+        }
 }
 }

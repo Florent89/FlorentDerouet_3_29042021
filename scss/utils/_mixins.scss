@@ -5,16 +5,16 @@
     }
 
 @mixin tablette-only{
-        @media screen and ( max-width: map-get($breakpoints, tablette)) {
+    @media screen and ( max-width: map-get($breakpoints, tablette)) {
             
-        }       
-        }
+    }       
+    }
 
 @mixin desktop-only{
-            @media screen and ( min-width: map-get($breakpoints, desktop)) {
+    @media screen and ( min-width: map-get($breakpoints, desktop)) {
             
-            }       
-            }
+    }       
+    }
 
 @mixin flex-center{
     display:flex;
@@ -39,14 +39,25 @@
 @mixin title_card
 {
     margin-bottom:5px;
-        font-size:1.2em;
-        font-weight:300;
+    font-size:1.2em;
+    font-weight:300;
 }
 
 @mixin line{
     border:solid 1px $color_third;
-        width:13%;
-        margin:0px;
-        padding:0px;
+    width:13%;
+    margin:0px;
+    padding:0px;
 }
 
+@mixin gradiant_start($color_first, $colord_second) {
+    background: linear-gradient( $color_second, $color_primary);
+}
+
+@mixin gradient_end ($color_first, $colord_second) {
+background: linear-gradient( lighten($color_second,1%), lighten($color_first, 1%));
+}
+
+@mixin gradiant_button ($color_first, $colord_second) {
+    color: linear-gradient( $color_second, $color_primary);
+}

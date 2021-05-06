@@ -12,6 +12,7 @@
     
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:2.5em;
+        
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) {
