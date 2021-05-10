@@ -1,5 +1,5 @@
-@import "./utils/functions";
 @import "./utils/variables";
+@import "./utils/functions";
 @import "./utils/mixins";
 @import "./base/typography.scss";
 @import "./base/Settings_body.scss";
@@ -12,8 +12,10 @@
 @import "./pages/Home_Page/Presentation_Restaurant";
 @import "./pages/Home_Page/card_restaurant.scss";
 @import "./layout/footer";
+@import "./pages/Restaurant_page/animations.scss";
 @import "./pages/Restaurant_page/page_restaurant.scss";
 @import "./pages/Restaurant_page/restaurant_card.scss";
+@import "./pages/Home_Page/loader.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');

@@ -1,0 +1,75 @@
+.loader
+{
+        cursor: progress;
+        position: fixed;
+        height:100%;
+        background-color: $color_lightgrey;
+        opacity:0.8;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        margin:auto;
+        visibility: hidden;
+        animation: loader 2.5s linear;
+       
+
+    .spinner {
+        display:inline-block;
+        position:relative;
+        top:250px;
+        border-radius: 50px;
+        vertical-align:middle;
+        width:80px;
+        height:80px;
+        border: 6px solid $color_third;
+        border-top-color:$color_second;
+        border-bottom-color:$color_second;
+        animation: anim 2.5s linear; 
+        z-index:10;
+    }}
+
+
+.lettre{
+    color: $color_primary;
+    font-size:30px;
+    font-family: "Shrikhand";
+    letter-spacing: 8px;
+    animation: flash 1.5s linear;
+    animation: loader 1.8s linear;
+    flex-wrap:nowrap;
+    visibility:hidden;
+    position:relative;
+    top:250px;
+}
+
+.lettre:nth-child(1){
+    animation-delay:0.1s;
+}
+.lettre:nth-child(2){
+    animation-delay:0.2s;
+}
+.lettre:nth-child(3){
+    animation-delay:0.3s;
+}
+.lettre:nth-child(4){
+    animation-delay:0.4s;
+}
+.lettre:nth-child(4){
+    animation-delay:0.4s;
+}
+.lettre:nth-child(5){
+    animation-delay:0.5s;
+}
+.lettre:nth-child(6){
+    animation-delay:0.6s;
+}
+.lettre:nth-child(7){
+    animation-delay:0.7s;
+}
+
+
+
+

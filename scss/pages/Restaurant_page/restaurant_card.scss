@@ -1,6 +1,7 @@
 .entrees, .plats, .desserts
 {
-    width:90%;
+    width:100%;
+    padding-left:20px;
 
     &__title
     {
@@ -17,7 +18,7 @@
         border: 1px solid white;
         padding:5px 5px 0px 5px;
         width:90%;
-        font-size:0.8em;
+        font-size:1.1em;
         font-weight:bold;
         border-radius: 10px;
         background-color: white;
