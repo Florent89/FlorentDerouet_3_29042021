@@ -76,7 +76,41 @@ top:15px}
 
 /*fonction pour rendre invisible les éléments en attente d'affichage*/
 @keyframes attente {
-    0%{opacity:0}
+    0%{opacity:0;
+    visibility: hidden;}
 
-100%{opacity:1;}
+    85%{opacity:0;
+    }
+    90%{opacity:0.5;}
+    95%{opacity:0.8;}
+    100%{opacity:1;
+    visibility: visible;}
 } 
+
+
+/* coulissement de valdiation*/
+@keyframes coulisse {
+    0%{ transform: translatex(50px);}
+
+    70%{ transform: translatex(35px);
+    visibility: visible;
+    opacity: 0.5;}
+
+    85%{  transform: translatex(20px);
+        visibility: visible;
+        opacity:0.8;
+    }
+
+    100%{ transform: translatex(0px);
+        visibility: visible;
+    opacity:1}
+}
+
+/*rotation de validation*/
+@keyframes rotate {
+    0%{ transform: rotate(0deg)}
+
+    50%{ transform: rotate(180deg)}
+
+    100%{transform: rotate(360deg);}
+}

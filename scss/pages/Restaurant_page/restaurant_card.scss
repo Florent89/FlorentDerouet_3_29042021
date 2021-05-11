@@ -6,31 +6,33 @@
     &__title
     {
         @include title_card;
+        
     }
 
     &__line
     {
         @include line;
+        margin-bottom:10px;
+        
     }
 
     &__card1, &__card2, &__card3,  &__card4
     {
         border: 1px solid white;
-        padding:5px 5px 0px 5px;
+        padding:0px 0px 0px 5px;
         width:90%;
-        font-size:1.1em;
+        height:70px;
+        font-size:0.9em;
+        margin-bottom:10px;
         font-weight:bold;
         border-radius: 10px;
         background-color: white;
         box-shadow: 5px 5px 5px 2px $color_grey;
         display:flex;
-        flex-direction:column;
+        flex-direction:row;
         align-content: center;
-    
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
-            height: 150px;
-            font-size: 1.2em;
-        }
+        flex-wrap:nowrap;
+        text-overflow: "...";
     
         span {
             font-weight: 300;
@@ -38,15 +40,43 @@
             align-self:flex-start;
             font-family:'roboto';
             padding-top:5px;
+            font-size:0.8em;
+
         }
     
-        em 
-        {
-            font-style:normal;
-            text-align:right;
-            position: relative;
-            bottom:15px;
-            font-weight:bold;
+        .prix{
+            width:80px;
+            align-self:flex-end;
+            position:absolute;
+            right:0px;
+        }
+
+        .intitule{
+            width:180%;
+            margin-right:50px;
+            flex-wrap:nowrap;
+            text-overflow: "...";
+            white-space: nowrap;
+        }
+
+        .coulissement{
+            background-color:$color_third;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            width:25%;
+            height:70px;
+            margin-left:20px;
+            margin-bottom:0;
+            padding:0;
+            @include bordure_arrondies(0px, 15px, 0px, 15px);
+            border-collapse: collapse;
+            visibility: hidden;
+
+            i{
+                color:white;
+                font-size:2em;
+            }
         }
     }
     
