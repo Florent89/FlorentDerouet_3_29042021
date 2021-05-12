@@ -79,8 +79,7 @@ top:15px}
     0%{opacity:0;
     visibility: hidden;}
 
-    85%{opacity:0;
-    }
+    85%{opacity:0;}
     90%{opacity:0.5;}
     95%{opacity:0.8;}
     100%{opacity:1;
@@ -90,27 +89,29 @@ top:15px}
 
 /* coulissement de valdiation*/
 @keyframes coulisse {
-    0%{ transform: translatex(50px);}
+    0%{ width:0%;}
 
-    70%{ transform: translatex(35px);
-    visibility: visible;
-    opacity: 0.5;}
+    70%{ width:20%;
+    ;
+    opacity: 0.5;
+}
 
-    85%{  transform: translatex(20px);
-        visibility: visible;
+    85%{  width:30%;  
         opacity:0.8;
     }
 
-    100%{ transform: translatex(0px);
-        visibility: visible;
+    100%{ width:40%;  
     opacity:1}
 }
 
 /*rotation de validation*/
 @keyframes rotate {
-    0%{ transform: rotate(0deg)}
+    0%{ transform: rotate(0deg);
+    font-size:0em;}
 
-    50%{ transform: rotate(180deg)}
+    50%{ transform: rotate(180deg);
+    font-size:2em;}
 
-    100%{transform: rotate(360deg);}
+    100%{transform: rotate(360deg);
+    font-size:2em;}
 }

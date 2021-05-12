@@ -1,6 +1,9 @@
 .loader
 {
         cursor: progress;
+        display:flex;
+        align-items:center;
+        justify-content: center;
         position: fixed;
         height:100%;
         background-color: $color_lightgrey;
@@ -18,31 +21,43 @@
 
     .spinner {
         display:inline-block;
-        position:relative;
-        top:250px;
         border-radius: 50px;
         vertical-align:middle;
-        width:80px;
-        height:80px;
+        width:70px;
+        height:70px;
         border: 6px solid $color_third;
         border-top-color:$color_second;
         border-bottom-color:$color_second;
         animation: anim 2.5s linear; 
         z-index:10;
+        margin-right:8px;
+
+        @media screen and (max-width:330px) {
+            width:40px;
+            height:40px;
+        }
+
+        @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+            width:90px;
+            height:90px;
+        }
+
     }}
 
 
 .lettre{
     color: $color_primary;
-    font-size:30px;
+    font-size:25px;
     font-family: "Shrikhand";
     letter-spacing: 8px;
     animation: flash 1.5s linear;
     animation: loader 1.8s linear;
     flex-wrap:nowrap;
     visibility:hidden;
-    position:relative;
-    top:250px;
+
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)){
+        font-size:45px;
+    }
 }
 
 .lettre:nth-child(1){
@@ -70,6 +85,20 @@
     animation-delay:0.7s;
 }
 
+.lettre:nth-child(8){
+    animation-delay:0.8s;
+}
 
+.lettre:nth-child(9){
+    animation-delay:0.9s;
+}
+
+.lettre:nth-child(10){
+    animation-delay:1s;
+}
+
+.lettre:nth-child(11){
+    animation-delay:1.1s;
+}
 
 

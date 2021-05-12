@@ -20,7 +20,7 @@
         }
     }
 
-    &_arrow{
+    &__arrow{
         font-size:1em;
         color: $color_black;
         margin-left:30px;
@@ -54,7 +54,13 @@ header
     img 
     {
         width:40%;
+    
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        width:30%;
     }
 
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (min-width: map-get($breakpoints, desktop)) {
+        width:35%;
+    }}
 }
 

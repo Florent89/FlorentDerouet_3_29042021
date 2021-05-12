@@ -22,7 +22,7 @@
         padding:0px 0px 0px 5px;
         width:90%;
         height:70px;
-        font-size:0.9em;
+        font-size:1.1em;
         margin-bottom:10px;
         font-weight:bold;
         border-radius: 10px;
@@ -33,9 +33,18 @@
         align-content: center;
         flex-wrap:nowrap;
         text-overflow: "...";
+
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            height:160px;
+        }
+
+        @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
+        {
+            height:150px;
+        }
     
         span {
-            font-weight: 300;
+            font-weight: 500;
             overflow:hidden;
             align-self:flex-start;
             font-family:'roboto';
@@ -49,6 +58,16 @@
             align-self:flex-end;
             position:absolute;
             right:0px;
+
+            @media screen and (min-width: map-get($breakpoints, desktop)) {
+                position:relative;
+                right:20px;
+            }
+            @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
+            {
+                position:relative;
+                right:20px;
+            }
         }
 
         .intitule{
@@ -64,18 +83,27 @@
             display:flex;
             justify-content: center;
             align-items:center;
-            width:25%;
+            width:0%;
             height:70px;
             margin-left:20px;
             margin-bottom:0;
             padding:0;
             @include bordure_arrondies(0px, 15px, 0px, 15px);
             border-collapse: collapse;
-            visibility: hidden;
+            
+            @media screen and (min-width: map-get($breakpoints, desktop)) {
+                height:160px;
+            }
+
+
+            @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
+            {
+                height:150px;
+            }
 
             i{
                 color:white;
-                font-size:2em;
+                font-size:0em;
             }
         }
     }

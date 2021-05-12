@@ -34,7 +34,7 @@
         }
     }
 
-    @media screen and (min-width: map-get($breakpoints, tablette)) {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
         font-size:1.7em;
         flex-direction:row;
         flex-wrap:wrap;
@@ -42,6 +42,7 @@
 
         &__title{
             width:100%;
+            font-size:1.4em;
         }
     }
 }
