@@ -6,16 +6,18 @@
     box-shadow: inset 0px 2px 2px darken($color_grey, 10%);
     font-weight:800;
     
-    i {
+    i 
+    {
         padding-right:10px;
     }
     
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-        font-size:1.4em;
-        
+    @media screen and (min-width: map-get($breakpoints, desktop)) 
+    {
+        font-size:1.4em;  
     }
 
-    @media screen and (min-width: map-get($breakpoints, tablette)) and  (max-width: map-get($breakpoints, desktop)){
+    @media screen and (min-width: map-get($breakpoints, tablette)) and  (max-width: map-get($breakpoints, desktop))
+    {
         font-size:1.4em;
     }
 }

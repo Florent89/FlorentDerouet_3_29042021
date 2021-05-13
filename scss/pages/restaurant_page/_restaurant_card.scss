@@ -12,8 +12,7 @@
     &__line
     {
         @include line;
-        margin-bottom:10px;
-        
+        margin-bottom:10px;  
     }
 
     &__card1, &__card2, &__card3,  &__card4
@@ -34,7 +33,8 @@
         flex-wrap:nowrap;
         text-overflow: "...";
 
-        @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @media screen and (min-width: map-get($breakpoints, desktop)) 
+        {
             height:160px;
             width:100%;
         }
@@ -45,23 +45,25 @@
             width:98%;
         }
     
-        span {
+        span 
+        {
             font-weight: 500;
             overflow:hidden;
             align-self:flex-start;
             font-family:'roboto';
             padding-top:5px;
             font-size:0.8em;
-
         }
     
-        .prix{
+        .prix
+        {
             width:80px;
             align-self:flex-end;
             position:absolute;
             right:0px;
 
-            @media screen and (min-width: map-get($breakpoints, desktop)) {
+            @media screen and (min-width: map-get($breakpoints, desktop)) 
+            {
                 position:relative;
                 right:20px;
             }
@@ -72,7 +74,8 @@
             }
         }
 
-        .intitule{
+        .intitule
+        {
             width:180%;
             margin-right:50px;
             flex-wrap:nowrap;
@@ -80,7 +83,8 @@
             white-space: nowrap;
         }
 
-        .coulissement{
+        .coulissement
+        {
             background-color:$color_third;
             display:flex;
             justify-content: center;
@@ -93,22 +97,22 @@
             @include bordure_arrondies(0px, 15px, 0px, 15px);
             border-collapse: collapse;
             
-            @media screen and (min-width: map-get($breakpoints, desktop)) {
+            @media screen and (min-width: map-get($breakpoints, desktop)) 
+            {
                 height:160px;
             }
-
 
             @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
             {
                 height:150px;
             }
 
-            i{
+            i
+            {
                 color:white;
                 font-size:0em;
             }
         }
-    }
-    
+    } 
 }
 

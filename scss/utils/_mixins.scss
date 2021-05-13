@@ -1,35 +1,43 @@
-@mixin mobile-only{
-    @media screen and ( max-width: map-get($breakpoints, mobile)) {
-       width:100%;
+@mixin mobile-only
+{
+    @media screen and ( max-width: map-get($breakpoints, mobile)) 
+    {
+        width:100%;
     }       
-    }
+}
 
-@mixin tablette-only{
-    @media screen and ( max-width: map-get($breakpoints, tablette)) {
-            
+@mixin tablette-only
+{
+    @media screen and ( max-width: map-get($breakpoints, tablette)) 
+    {
+        width:100%;   
     }       
-    }
+}
 
 @mixin desktop-only{
-    @media screen and ( min-width: map-get($breakpoints, desktop)) {
-            
+    @media screen and ( min-width: map-get($breakpoints, desktop)) 
+    {
+        width:100%;    
     }       
-    }
+}
 
-@mixin flex-center{
+@mixin flex-center
+{
     display:flex;
     align-items:center;
     justify-content: center;
 }
 
-@mixin flex-column{
+@mixin flex-column
+{
     display:flex;
     align-items:center;
     justify-content: center;
     flex-direction:column;
 }
 
-@mixin bordure_arrondies($pixel_number1, $pixel_number2, $pixel_number3, $pixel_number4){
+@mixin bordure_arrondies($pixel_number1, $pixel_number2, $pixel_number3, $pixel_number4)
+{
     border-top-left-radius: $pixel_number1;
     border-top-right-radius: $pixel_number2 ;
     border-bottom-left-radius: $pixel_number3;
@@ -43,21 +51,25 @@
     font-weight:300;
 }
 
-@mixin line{
+@mixin line
+{
     border:solid 1px $color_third;
     width:13%;
     margin:0px;
     padding:0px;
 }
 
-@mixin gradiant_start($color_first, $colord_second) {
+@mixin gradiant_start($color_first, $colord_second) 
+{
     background: linear-gradient( $color_second, $color_primary);
 }
 
-@mixin gradient_end ($color_first, $colord_second) {
+@mixin gradient_end ($color_first, $colord_second) 
+{
 background: linear-gradient( lighten($color_second,1%), lighten($color_first, 1%));
 }
 
-@mixin gradiant_button ($color_first, $colord_second) {
+@mixin gradiant_button ($color_first, $colord_second) 
+{
     color: linear-gradient( $color_second, $color_primary);
 }

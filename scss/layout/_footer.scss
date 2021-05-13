@@ -10,7 +10,6 @@
         margin-top:0px;
     }
 
-
     a {
         text-decoration:none;
         color:#FFF;
@@ -22,7 +21,6 @@
             margin-top:20px;
         }
     }
-
 
     &__logo {
         margin:0;
@@ -38,9 +36,8 @@
                 width:50%;
             }
         }
+    }
 
-
-}
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:1.3em;
         height:max-content;
@@ -50,7 +47,6 @@
         width:100%;
         margin:0;
         padding:0;
-
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) and (min-width: map-get($breakpoints, desktop)){

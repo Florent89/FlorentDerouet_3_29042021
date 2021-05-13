@@ -3,13 +3,15 @@
     @include flex-column;
     background-color:white;
     
-    &__title{
+    &__title
+    {
         align-self:flex-start;
         margin-left:20px;
-        font-weight:1000;
+        font-weight:bold;
     }
 
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @media screen and (min-width: map-get($breakpoints, desktop)) 
+    {
         flex-flow: row wrap;
         justify-content: space-around;
         font-weight:normal;
@@ -17,11 +19,13 @@
         margin-left:-20px;
     }
 
-    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
+    {
         font-size:1.2em;
 
-        h2 {
+        h2 
+        {
             font-size:1.7em;
         }
-}
+    }
 }
