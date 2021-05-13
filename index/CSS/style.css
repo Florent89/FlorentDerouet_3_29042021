@@ -712,6 +712,14 @@ header img {
     height: 90px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .loader .spinner {
+    width: 90px;
+    height: 90px;
+    visibility: visible;
+    animation: anim 2.5s linear both;
+  }
+}
 
 .lettre {
   color: #9356DC;
@@ -726,6 +734,11 @@ header img {
 @media screen and (min-width: 750px) and (max-width: 1024px) {
   .lettre {
     font-size: 45px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .lettre {
+    font-size: 70px;
   }
 }
 
