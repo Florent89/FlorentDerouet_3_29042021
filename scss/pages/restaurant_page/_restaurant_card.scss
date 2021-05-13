@@ -36,11 +36,13 @@
 
         @media screen and (min-width: map-get($breakpoints, desktop)) {
             height:160px;
+            width:100%;
         }
 
         @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
         {
             height:150px;
+            width:98%;
         }
     
         span {

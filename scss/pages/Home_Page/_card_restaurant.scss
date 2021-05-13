@@ -41,14 +41,14 @@
         
         width:22%;
         height:250px;
-        font-size:0.6em;
+        font-size:0.95em;
         margin-right:5px;
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
         width:40%;
         height:220px;
-        font-size:0.6em;
+        font-size:1em;
     }
 
     }
