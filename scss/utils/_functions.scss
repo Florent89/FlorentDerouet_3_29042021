@@ -95,8 +95,40 @@
         opacity:0.8;}
 
     100%{ width:40%;  
-    opacity:1}
+    opacity:1;}
 }
+
+
+/*coulissement version desktop*/
+@keyframes coulisse_desktop
+{
+    0%{ width:0%;}
+
+    70%{ width:5%;
+    opacity: 0.5;}
+
+    85%{ width:10%;  
+        opacity:0.8;}
+
+    100%{ width:15%;  
+    opacity:1;}
+}
+
+/*coulissement version tablette*/
+@keyframes coulisse_tablette
+{
+    0%{ width:0%;}
+
+    70%{ width:10%;
+    opacity: 0.5;}
+
+    85%{ width:18%;  
+        opacity:0.8;}
+
+    100%{ width:25%;  
+    opacity:1;}
+}
+
 
 /*rotation de validation*/
 @keyframes rotate 

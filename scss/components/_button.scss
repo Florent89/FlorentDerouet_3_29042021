@@ -43,7 +43,8 @@
         {    
             position:absolute;
             left: 10px;
-            bottom:25px;
+            bottom:20px;
+            padding: 4px 12px 4px 12px;
         }
 
         @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
@@ -86,10 +87,11 @@
     @media screen and (min-width: map-get($breakpoints, desktop)) 
     {    
         font-weight:normal;
-        width:25%;
+        width:30%;
         height:80px;
         overflow:hidden;
         margin-top:15px;  
+        font-size:1.2em;
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 

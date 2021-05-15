@@ -9,11 +9,21 @@
             .coulissement
             {
             
-                animation: coulisse 0.4s linear both;
+                animation: coulisse 0.3s linear both;
+
+                @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
+                {
+                    animation: coulisse_tablette 0.3s linear both;
+                }
+
+                @media screen and (min-width: map-get($breakpoints, desktop)) 
+                {
+                    animation: coulisse_desktop 0.3s linear both;
+                }
 
                 i
                 {
-                animation: rotate 0.4s linear both;
+                animation: rotate 0.3s linear both;
                 }
             }
 

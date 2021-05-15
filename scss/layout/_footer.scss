@@ -3,7 +3,7 @@
     color: #FFF;
     background-color: $color_black;
     padding-left:10px;
-    height:150px;
+    height:max-content;
     
     p{
         margin-bottom:5px;
@@ -41,13 +41,16 @@
     @media screen and (min-width: map-get($breakpoints, desktop)) {
         font-size:1.3em;
         height:max-content;
-        display:flex;
-        flex-direction:row;
-        justify-content: space-around;
         width:100%;
         margin:0;
         padding:0;
-    }
+
+        &__logo {
+            img {
+            width:20%;
+        }
+        
+    }}
 
     @media screen and (min-width: map-get($breakpoints, tablette)) and (min-width: map-get($breakpoints, desktop)){
         font-size:1.3em;

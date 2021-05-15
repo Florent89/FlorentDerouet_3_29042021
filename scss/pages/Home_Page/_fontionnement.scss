@@ -17,6 +17,11 @@
         font-weight:normal;
         font-size:1em;
         margin-left:-20px;
+
+        &__title 
+        {
+            width: 90%;
+        }
     }
 
     @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) 
