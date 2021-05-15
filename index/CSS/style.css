@@ -117,6 +117,42 @@
     opacity: 1;
   }
 }
+/*coulissement version desktop*/
+@keyframes coulisse_desktop {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 5%;
+    opacity: 0.5;
+  }
+  85% {
+    width: 10%;
+    opacity: 0.8;
+  }
+  100% {
+    width: 15%;
+    opacity: 1;
+  }
+}
+/*coulissement version tablette*/
+@keyframes coulisse_tablette {
+  0% {
+    width: 0%;
+  }
+  70% {
+    width: 10%;
+    opacity: 0.5;
+  }
+  85% {
+    width: 18%;
+    opacity: 0.8;
+  }
+  100% {
+    width: 25%;
+    opacity: 1;
+  }
+}
 /*rotation de validation*/
 @keyframes rotate {
   0% {
@@ -133,14 +169,11 @@
   }
 }
 body {
-  font-family: "Roboto";
-}
-
-body {
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #f2f2f2;
+  font-family: "Roboto";
 }
 
 figure {
@@ -188,7 +221,8 @@ figure {
   .function_button .number {
     position: absolute;
     left: 10px;
-    bottom: 25px;
+    bottom: 20px;
+    padding: 4px 12px 4px 12px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1024px) {
@@ -223,10 +257,11 @@ figure {
 @media screen and (min-width: 1024px) {
   .function_button {
     font-weight: normal;
-    width: 25%;
+    width: 30%;
     height: 80px;
     overflow: hidden;
     margin-top: 15px;
+    font-size: 1.2em;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1024px) {
@@ -256,17 +291,7 @@ figure {
   backface-visibility: hidden;
 }
 
-/*Code pour le bouton coeur*/
-.fa-heart {
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  font-size: 2em;
-  position: relative;
-  left: 100px;
-  bottom: 50px;
-}
-
+/*Code pour le bouton coeur de la page index*/
 .button_like input[type=checkbox] {
   display: none;
 }
@@ -290,16 +315,17 @@ figure {
   }
 }
 
-/* code bouton coeur pour les pages resto*/
-.button_like_pages i {
+.fa-heart {
   color: transparent;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
   font-size: 2em;
   position: relative;
-  left: 0px;
+  left: 100px;
+  bottom: 50px;
 }
 
+/* code bouton coeur pour les pages resto*/
 .button_like_pages input[type=checkbox] {
   display: none;
 }
@@ -311,6 +337,14 @@ figure {
   transition: color 3s;
 }
 
+.button_like_pages i {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-size: 2em;
+  position: relative;
+  left: 0px;
+}
 @media screen and (min-width: 1024px) {
   .button_like_pages {
     position: relative;
@@ -327,7 +361,7 @@ figure {
   color: #FFF;
   background-color: #333333;
   padding-left: 10px;
-  height: 150px;
+  height: max-content;
 }
 .foot p {
   margin-bottom: 5px;
@@ -362,12 +396,12 @@ figure {
   .foot {
     font-size: 1.3em;
     height: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     width: 100%;
     margin: 0;
     padding: 0;
+  }
+  .foot__logo img {
+    width: 20%;
   }
 }
 @media screen and (min-width: 750px) and (min-width: 1024px) {
@@ -377,48 +411,7 @@ figure {
   }
 }
 
-.header__logo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0px 10px 0px;
-}
-.header__logo img {
-  width: 40%;
-}
-@media screen and (min-width: 1024px) {
-  .header__logo img {
-    width: 25%;
-  }
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  padding: 10px 0px 10px 0px;
-}
-.header a:visited {
-  color: #333333;
-}
-.header__arrow {
-  font-size: 1em;
-  color: #333333;
-  margin-left: 30px;
-}
-@media screen and (min-width: 1024px) {
-  .header__arrow {
-    font-size: 2.5em;
-  }
-}
-@media screen and (min-width: 750px) and (max-width: 1024px) {
-  .header__arrow {
-    font-size: 2em;
-  }
-}
-
+/* header page index*/
 header {
   display: flex;
   align-items: center;
@@ -445,6 +438,48 @@ header img {
 @media screen and (min-width: 750px) and (max-width: 1024px) {
   header img {
     width: 35%;
+  }
+}
+
+/*header des pages menus des restaurants*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 0px 10px 0px;
+}
+.header a:visited {
+  color: #333333;
+}
+.header__logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 10px 0px;
+}
+.header__logo img {
+  width: 40%;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo img {
+    width: 25%;
+  }
+}
+.header__arrow {
+  font-size: 1em;
+  color: #333333;
+  margin-left: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .header__arrow {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .header__arrow {
+    font-size: 2em;
   }
 }
 
@@ -480,7 +515,7 @@ header img {
   background-color: #f2f2f2;
 }
 .description h1 {
-  font-weight: 1000;
+  font-weight: bold;
   margin: 30px 0px 10px 0px;
 }
 @media screen and (min-width: 1024px) {
@@ -507,7 +542,7 @@ header img {
 .fonctionnement__title {
   align-self: flex-start;
   margin-left: 20px;
-  font-weight: 1000;
+  font-weight: bold;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
@@ -516,6 +551,9 @@ header img {
     font-weight: normal;
     font-size: 1em;
     margin-left: -20px;
+  }
+  .fonctionnement__title {
+    width: 90%;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1024px) {
@@ -546,7 +584,7 @@ header img {
   align-self: flex-start;
   margin-top: 50px;
   margin-left: 20px;
-  font-weight: 1000;
+  font-weight: bold;
 }
 @media screen and (min-width: 1024px) {
   .restaurants {
@@ -726,7 +764,7 @@ header img {
   font-size: 25px;
   font-family: "Shrikhand";
   letter-spacing: 8px;
-  animation: flash 1.5s linear;
+  animation: flash 1.8s linear;
   animation: loader 1.8s linear;
   flex-wrap: nowrap;
   visibility: hidden;
@@ -849,10 +887,20 @@ header img {
   cursor: pointer;
 }
 .entrees__card1:hover .coulissement, .entrees__card2:hover .coulissement, .entrees__card3:hover .coulissement, .entrees__card4:hover .coulissement, .plats__card1:hover .coulissement, .plats__card2:hover .coulissement, .plats__card3:hover .coulissement, .plats__card4:hover .coulissement, .desserts__card1:hover .coulissement, .desserts__card2:hover .coulissement, .desserts__card3:hover .coulissement, .desserts__card4:hover .coulissement {
-  animation: coulisse 0.4s linear both;
+  animation: coulisse 0.3s linear both;
+}
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+  .entrees__card1:hover .coulissement, .entrees__card2:hover .coulissement, .entrees__card3:hover .coulissement, .entrees__card4:hover .coulissement, .plats__card1:hover .coulissement, .plats__card2:hover .coulissement, .plats__card3:hover .coulissement, .plats__card4:hover .coulissement, .desserts__card1:hover .coulissement, .desserts__card2:hover .coulissement, .desserts__card3:hover .coulissement, .desserts__card4:hover .coulissement {
+    animation: coulisse_tablette 0.3s linear both;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .entrees__card1:hover .coulissement, .entrees__card2:hover .coulissement, .entrees__card3:hover .coulissement, .entrees__card4:hover .coulissement, .plats__card1:hover .coulissement, .plats__card2:hover .coulissement, .plats__card3:hover .coulissement, .plats__card4:hover .coulissement, .desserts__card1:hover .coulissement, .desserts__card2:hover .coulissement, .desserts__card3:hover .coulissement, .desserts__card4:hover .coulissement {
+    animation: coulisse_desktop 0.3s linear both;
+  }
 }
 .entrees__card1:hover .coulissement i, .entrees__card2:hover .coulissement i, .entrees__card3:hover .coulissement i, .entrees__card4:hover .coulissement i, .plats__card1:hover .coulissement i, .plats__card2:hover .coulissement i, .plats__card3:hover .coulissement i, .plats__card4:hover .coulissement i, .desserts__card1:hover .coulissement i, .desserts__card2:hover .coulissement i, .desserts__card3:hover .coulissement i, .desserts__card4:hover .coulissement i {
-  animation: rotate 0.4s linear both;
+  animation: rotate 0.3s linear both;
 }
 .entrees__card1:hover .intitule, .entrees__card2:hover .intitule, .entrees__card3:hover .intitule, .entrees__card4:hover .intitule, .plats__card1:hover .intitule, .plats__card2:hover .intitule, .plats__card3:hover .intitule, .plats__card4:hover .intitule, .desserts__card1:hover .intitule, .desserts__card2:hover .intitule, .desserts__card3:hover .intitule, .desserts__card4:hover .intitule {
   width: 90%;
@@ -991,13 +1039,13 @@ header img {
 @media screen and (min-width: 1024px) {
   .entrees__card1, .entrees__card2, .entrees__card3, .entrees__card4, .plats__card1, .plats__card2, .plats__card3, .plats__card4, .desserts__card1, .desserts__card2, .desserts__card3, .desserts__card4 {
     height: 160px;
-    width: 100%;
+    width: 95%;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1024px) {
   .entrees__card1, .entrees__card2, .entrees__card3, .entrees__card4, .plats__card1, .plats__card2, .plats__card3, .plats__card4, .desserts__card1, .desserts__card2, .desserts__card3, .desserts__card4 {
     height: 150px;
-    width: 98%;
+    width: 95%;
   }
 }
 .entrees__card1 span, .entrees__card2 span, .entrees__card3 span, .entrees__card4 span, .plats__card1 span, .plats__card2 span, .plats__card3 span, .plats__card4 span, .desserts__card1 span, .desserts__card2 span, .desserts__card3 span, .desserts__card4 span {
