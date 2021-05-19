@@ -1,6 +1,7 @@
 .restaurants {
 
-    a {
+    a 
+    {
         padding:0;
         margin:0;
     }
@@ -19,7 +20,7 @@
         overflow:hidden;
         transform: scale(1);
 
-        &:hover{
+        &:hover {
             transform: scale(1.05);
             transition: transform 1.2s;
             box-shadow: 4px 4px 4px 4px grey;

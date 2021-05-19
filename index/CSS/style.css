@@ -361,7 +361,7 @@ figure {
   color: #FFF;
   background-color: #333333;
   padding-left: 10px;
-  height: max-content;
+  height: 100%;
 }
 .foot p {
   margin-bottom: 5px;
@@ -595,6 +595,7 @@ header img {
   .restaurants__title {
     width: 100%;
     font-size: 1.5em;
+    padding-left: 70px;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 1024px) {
